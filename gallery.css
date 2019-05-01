@@ -40,10 +40,8 @@ a{
     align-content: center;
     justify-content: center;
     color:#ffdee9;
+    font-size:70%;
  }
-#background p{
-    font-size:80%;
-}
 #gallery{
     flex-wrap: wrap;
     display: flex;
@@ -58,7 +56,7 @@ a{
     width:30vh;
     transition: all .2s ease-in-out;
     height:30vh;
-    margin:50px;
+    margin:30px;
     
     
 }
