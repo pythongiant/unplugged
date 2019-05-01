@@ -1,0 +1,78 @@
+/* Color Pallet https://colorhunt.co/palette/145074 */
+*{
+    margin:0;
+    padding:0;
+}
+html,body{
+    color:#323232;
+    height:100%;
+    font-size: 2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    width: 100%;
+}
+#myVideo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.6;
+    z-index: -100;
+    width: 100%;
+    height: 100%;
+}
+#button{
+    font-size:40%;
+    background-color:#ffdee9;
+    color:#323232;
+    border-radius: 5%;
+    cursor: pointer;
+    transition:  all .2s ease-in-out;
+    padding:5px;
+}
+#button:hover{
+    background-color: #ff0b55;
+    color:#ffdee9;
+}
+#start{
+    color:#4e4e4e;
+    width:100%;
+    height:100%;
+    position: fixed;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 0;
+    flex-direction: column;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    
+}
+
+#navbar{
+    display: flex;
+    padding:10px;
+    font-size:50%;
+    position:fixed;
+    background:rgba(255,255,255,0.8);
+    width:100%;
+}
+@media (min-aspect-ratio: 16/9) {
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    #myVideo{
+        width: 100%;
+        height: auto;
+    }
+  }
+  #navbar div{
+      margin:10px;
+      cursor: pointer;
+  }
