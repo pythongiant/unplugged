@@ -66,6 +66,29 @@ html,body{
     }
 }
 
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
+
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%
+	}
+	50% {
+		background-position: 100% 50%
+	}
+	100% {
+		background-position: 0% 50%
+	}
+}
 @media (max-aspect-ratio: 16/9) {
     #myVideo{
         width: 100%;
@@ -75,4 +98,21 @@ html,body{
   #navbar div{
       margin:10px;
       cursor: pointer;
+  }
+  @media (max-width:320px)  { 
+    html,body{
+
+        font-size: 1.5em; 
+    }
+    #myVideo{
+        display: none;
+    }
+    #start{
+        background: linear-gradient(-45deg, #CE9FFC,#7367F0);
+        background-size: 400% 400%;
+        color:#ffdee9;
+        -webkit-animation: Gradient 15s ease infinite;
+        -moz-animation: Gradient 15s ease infinite;
+        animation: Gradient 15s ease infinite;
+    }
   }
