@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>FAQ</title>
+	<link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="faq.css">
+  <script src="index.js"></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+    $('.acc h3').click(function(){
+      $(this).next('.content').slideToggle();
+      $(this).parent().toggleClass('active');
+      $(this).parent().siblings().children('.content').slideUp();
+      $(this).parent().siblings().removeClass('active');
+    });
+  });
+
+  </script>
+</head>
+<body>
+  <div id="navbar">
+      <div><a href="index.html">Home    </a></div>
+      <div><a href="info.html">About   </a></div>
+      <div><a href="faq.html">FAQ     </a></div>
+      <div><a href="gallery.html">Gallery </a></div>
+  </div>
+<h1>FAQ Section</h1>
+	<div class="container">
+		<!-- Accordion Starts-->
+		<div class="acc">
+			<h3>Question 1: What is the Battle Pass?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>The Battle Pass rewards players with in-game items by playing the game and completing challenges.  The more you play, the more rewards you unlock. Level up even faster by knocking out those daily challenges.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Accordian -->
+		<div class="acc">
+			<h3>Question 2: How do they handle teamers in solo play?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>The developers have built a system to automatically ban teamers in solo play.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Accordian -->
+    <div class="acc">
+			<h3>Question 3: Do I need a Console to play Battle Royale?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>No. You do not need Console in order to play Battle Royale.</p>
+				</div>
+			</div>
+		</div>
+
+    <div class="acc">
+			<h3>Question 4: Will Bluetooth headsets be supported on Android devices?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>Yes. Battle Royale Games currently support the use of Bluetooth headsets for audio usage but not for voice chat.</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- Accordian -->
+		<div class="acc">
+			<h3>Question 5: Will Android players be forced to play with other platforms?</h3>
+			<div class="content">
+				<div class="content-inner">
+					<p>No. By default, Android and iOS players are matched against other mobile players only. However, if a mobile player joins a crossplay party, they'll be placed in crossplay matchmaking queues.
+
+Note: Any players using controllers will be automatically placed in crossplay lobbies with other players who are using gamepads.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+  </html>
